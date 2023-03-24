@@ -2,7 +2,7 @@
   import { games } from '../games-data'
 </script>
 
-<main class="cards">
+<main>
 
 {#each games as game}
   <div class="card">
@@ -18,17 +18,17 @@
 </main>
 
 <style> 
-  .cards {
+  main {
     display: flex;
+    justify-content: center;
+    gap: 2em;
     flex: auto;
   }
 
-
-
   .card {
     border: 5px solid darkcyan;
-    width: max-content;
-    margin: auto;
+    width: 50ch;
+    height: 73ch;
     border-radius: 1em;
     text-align: center;
   }
@@ -45,5 +45,6 @@
   figcaption{
     width: 30ch;
     font-size: 1.2rem;
+    padding-top: 0.5em;
   }
 </style>
