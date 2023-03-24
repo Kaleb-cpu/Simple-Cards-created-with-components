@@ -3,25 +3,18 @@
 </script>
 
 <main class="cards">
-<div class="card">
-  <a href="{games[0].gameLink}">
-    <figure>
-      <h1>{games[0].gameName}</h1>
-      <img src="{games[0].gameImage}" width="200" height="280" alt="red">
-      <figcaption>{games[0].gameDescription}</figcaption>
-    </figure>
-  </a>
-</div>  
 
-<div class="card">
-  <a href="{games[1].gameLink}">
-    <figure>
-      <h1>{games[1].gameName}</h1>
-      <img src="{games[1].gameImage}" width="200" height="280" alt="red">
-      <figcaption>{games[1].gameDescription}</figcaption>
-    </figure>
-  </a>
-</div>  
+{#each games as game}
+  <div class="card">
+    <a href="{game.gameLink}">
+      <figure>
+        <h1>{game.gameName}</h1>
+        <img src="{game.gameImage}" width="200" height="280" alt="red">
+        <figcaption>{game.gameDescription}</figcaption>
+      </figure>
+    </a>
+  </div>  
+{/each}
 </main>
 
 <style> 
