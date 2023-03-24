@@ -1,9 +1,9 @@
 <script>
-  import Card from '$lib/components/Card.svelte';
+  import Games from '$lib/components/Games.svelte';
 </script>
 
 
-<Card />
+<Games />
 
 
 
